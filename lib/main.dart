@@ -1,4 +1,4 @@
-import 'package:event_planning_app/home/home_screen.dart';
+import 'package:event_planning_app/ui/home/home_screen.dart';
 import 'package:flutter/material.dart';
 
 void main(){
@@ -14,6 +14,7 @@ class myApp extends StatelessWidget{
       routes: {
         HomeScreen.routeName:(context) => HomeScreen(),
       },
+      
     );
   }
 
