@@ -32,6 +32,18 @@
 "name" : "الاسم",
 "re_password" : "اعادة كلمة المرور",
 "already_have_acc" : "لديك حساب بالفعل؟",
-"register" : "تسجيل"
+"register" : "تسجيل",
+"create_event" : "انشاء حدث",
+"title" : "العنوان",
+"event_title" : "عنوان الحدث",
+"description" : "الوصف",
+"event_description" : "وصف الحدث",
+"event_date" : "تاريخ الحدث",
+"choose_date" : "اختار التاريخ",
+"event_time" : "توقيت الحدث",
+"choose_time" : "اختار التوقيت",
+"location" : "الموقع",
+"choose_event_location" : "اختار موقع الحدث",
+"add_event" : "اضافة الحدث"
 
 }

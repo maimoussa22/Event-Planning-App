@@ -25,4 +25,18 @@ class AssetsManager{
   static const String iconPass = 'assets/images/icon_pass.png';
   static const String iconName = 'assets/images/icon_name.png';
   static const String visibleIcon = 'assets/images/icon_visible.png';
+  static const String sportImage = 'assets/images/sport_image.png';
+  static const String birthdayImage = 'assets/images/birthday_image.png';
+  static const String bookClubImage = 'assets/images/bookclub_image.png';
+  static const String eatingImage = 'assets/images/eating_image.png';
+  static const String exhibitionImage = 'assets/images/exhibition_image.png';
+  static const String gamingImage = 'assets/images/gaming_image.png';
+  static const String holidayImage = 'assets/images/holiday_image.png';
+  static const String meetingImage = 'assets/images/meeting_image.png';
+  static const String workshopImage = 'assets/images/workshop_image.png';
+  static const String titleIcon = 'assets/images/title_icon.png';
+  static const String dateIcon = 'assets/images/date_icon.png';
+  static const String timeIcon = 'assets/images/time_icon.png';
+  static const String locationIcon = 'assets/images/location_icon.png';
+
 }

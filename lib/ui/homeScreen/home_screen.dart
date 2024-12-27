@@ -1,3 +1,4 @@
+import 'package:event_planning_app/ui/homeScreen/add_event.dart';
 import 'package:event_planning_app/ui/homeScreen/tabs/favorite/favorite_tab.dart';
 import 'package:event_planning_app/ui/homeScreen/tabs/home/home_tab.dart';
 import 'package:event_planning_app/ui/homeScreen/tabs/map/map_tab.dart';
@@ -58,7 +59,10 @@ class _HomeScreenState extends State<HomeScreen> {
           ),
         ),
       ),
-      floatingActionButton: FloatingActionButton(onPressed: (){},
+      floatingActionButton: FloatingActionButton(
+          onPressed: (){
+            Navigator.pushNamed(context, AddEventScreen.routeName);
+      },
       child: Icon(Icons.add,color: AppColors.whiteColor,)),
       floatingActionButtonLocation: FloatingActionButtonLocation.centerDocked,
       body: tabs[selectedIndex],
