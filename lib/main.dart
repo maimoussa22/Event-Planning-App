@@ -2,6 +2,7 @@ import 'package:event_planning_app/provider/app_language_provider.dart';
 import 'package:event_planning_app/provider/app_theme_provider.dart';
 import 'package:event_planning_app/ui/auth/loginScreen/login_screen.dart';
 import 'package:event_planning_app/ui/auth/registerScreen/register_screen.dart';
+import 'package:event_planning_app/ui/homeScreen/add_event.dart';
 import 'package:event_planning_app/ui/homeScreen/home_screen.dart';
 import 'package:event_planning_app/utilies/app_theme.dart';
 import 'package:firebase_core/firebase_core.dart';
@@ -38,6 +39,7 @@ class myApp extends StatelessWidget{
         HomeScreen.routeName:(context) => HomeScreen(),
         LoginScreen.routeName:(context) => LoginScreen(),
         RegisterScreen.routeName:(context) => RegisterScreen(),
+        AddEventScreen.routeName:(context) => AddEventScreen(),
       },
       theme: AppTheme.themeLight,
       darkTheme: AppTheme.themeDark,
