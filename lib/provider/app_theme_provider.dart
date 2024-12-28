@@ -5,7 +5,7 @@ class AppThemeProvider extends ChangeNotifier{
   ThemeMode appTheme = ThemeMode.light;
 
   AppThemeProvider() {
-    loadThemeFromPreferences();
+    loadTheme();
   }
 
   void changeTheme(ThemeMode newTheme) async{
@@ -14,16 +14,16 @@ class AppThemeProvider extends ChangeNotifier{
     }
     appTheme = newTheme;
     notifyListeners();
-    await saveThemeToPreferences(newTheme);
+    await saveTheme(newTheme);
   }
 
-  saveThemeToPreferences(ThemeMode theme) async {
+  saveTheme(ThemeMode theme) async {
     final prefs = await SharedPreferences.getInstance();
     await prefs.setInt('themeMode', theme.index);
   }
 
 
-  loadThemeFromPreferences() async {
+  loadTheme() async {
     final prefs = await SharedPreferences.getInstance();
     final themeIndex = prefs.getInt('themeMode') ?? 0;
     appTheme = ThemeMode.values[themeIndex];
