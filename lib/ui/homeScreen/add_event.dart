@@ -1,3 +1,5 @@
+import 'package:event_planning_app/firebase_utils.dart';
+import 'package:event_planning_app/model/event.dart';
 import 'package:event_planning_app/ui/homeScreen/tabs/home/event_tab_widget.dart';
 import 'package:event_planning_app/ui/homeScreen/tabs/widget/choose_date_time.dart';
 import 'package:event_planning_app/ui/homeScreen/tabs/widget/custom_elevated_button.dart';
@@ -5,6 +7,7 @@ import 'package:event_planning_app/ui/homeScreen/tabs/widget/custom_text_filed_w
 import 'package:event_planning_app/utilies/app_colors.dart';
 import 'package:event_planning_app/utilies/app_styles.dart';
 import 'package:event_planning_app/utilies/assets_manager.dart';
+import 'package:event_planning_app/utilies/toast_utils.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_gen/gen_l10n/app_localizations.dart';
 import 'package:intl/intl.dart';
@@ -86,6 +89,7 @@ class _AddEventScreenState extends State<AddEventScreen> {
               Container(
                 height: height*0.04,
                 child: ListView.builder(
+                  itemCount: eventNameList.length,
                   scrollDirection: Axis.horizontal,
                     itemBuilder: (context,index){
                       return InkWell(
@@ -228,7 +232,20 @@ class _AddEventScreenState extends State<AddEventScreen> {
 
   }
   void addEvent() {
-    formKey.currentState?.validate();
-    formKey.currentState?.validate();
+    if(formKey.currentState?.validate()==true){
+      Event event = Event(
+          title: titleController.text,
+          description: descriptionController.text,
+          eventName: selectedEventName,
+          image: selectedEventImage,
+          date: selectedDate,
+          time: formattedTime
+      );
+      FirebaseUtils.addEventToFireStore(event).timeout(Duration(milliseconds: 500),
+      onTimeout: (){
+
+        ToastUtils.showToast('Added Event Successfully');
+      });
+    }
   }
 }

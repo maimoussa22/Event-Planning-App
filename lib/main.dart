@@ -1,3 +1,4 @@
+import 'package:cloud_firestore/cloud_firestore.dart';
 import 'package:event_planning_app/provider/app_language_provider.dart';
 import 'package:event_planning_app/provider/app_theme_provider.dart';
 import 'package:event_planning_app/ui/auth/loginScreen/login_screen.dart';
@@ -18,6 +19,7 @@ void main() async {
   await Firebase.initializeApp(
     options: DefaultFirebaseOptions.currentPlatform,
   );
+  await FirebaseFirestore.instance.disableNetwork();
   runApp(MultiProvider(
       providers: [
         ChangeNotifierProvider<AppLanguageProvider>( create: (context) => AppLanguageProvider()),
