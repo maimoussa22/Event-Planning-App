@@ -1,0 +1,42 @@
+class AssetsManager{
+  static const String splashScreenLight = 'assets/images/Splash Light.png';
+  static const String splashScreenDark = 'assets/images/Splash Dark.png';
+  static const String iconHome = 'assets/images/icon_home.png';
+  static const String iconMap = 'assets/images/icon_map.png';
+  static const String iconFavorite = 'assets/images/icon_favorite.png';
+  static const String iconProfile = 'assets/images/icon_profile.png';
+  static const String selectedIconHome = 'assets/images/selected_icon_home.png';
+  static const String selectedIconMap = 'assets/images/selected_icon_map.png';
+  static const String selectedIconFavorite = 'assets/images/selected_icon_favorite.png';
+  static const String selectedIconProfile = 'assets/images/selected_icon_profile.png';
+  static const String iconAll = 'assets/images/icon_all.png';
+  static const String iconSport = 'assets/images/icon_sport.png';
+  static const String iconBD = 'assets/images/icon_bd.png';
+  static const String selectedIconAll = 'assets/images/selectedIcon_all.png';
+  static const String selectedIconSport = 'assets/images/selectedIcon_sport.png';
+  static const String selectedIconBD = 'assets/images/selectedIcon_bd.png';
+  static const String homeImage = 'assets/images/home_image.png';
+  static const String iconLove = 'assets/images/icon_heart.png';
+  static const String iconSearch = 'assets/images/search_icon.png';
+  static const String profileImage = 'assets/images/profile_image.png';
+  static const String logo = 'assets/images/Logo.png';
+  static const String googleIcon = 'assets/images/google_icon.png';
+  static const String iconEmail = 'assets/images/icon_email.png';
+  static const String iconPass = 'assets/images/icon_pass.png';
+  static const String iconName = 'assets/images/icon_name.png';
+  static const String visibleIcon = 'assets/images/icon_visible.png';
+  static const String sportImage = 'assets/images/sport_image.png';
+  static const String birthdayImage = 'assets/images/birthday_image.png';
+  static const String bookClubImage = 'assets/images/bookclub_image.png';
+  static const String eatingImage = 'assets/images/eating_image.png';
+  static const String exhibitionImage = 'assets/images/exhibition_image.png';
+  static const String gamingImage = 'assets/images/gaming_image.png';
+  static const String holidayImage = 'assets/images/holiday_image.png';
+  static const String meetingImage = 'assets/images/meeting_image.png';
+  static const String workshopImage = 'assets/images/workshop_image.png';
+  static const String titleIcon = 'assets/images/title_icon.png';
+  static const String dateIcon = 'assets/images/date_icon.png';
+  static const String timeIcon = 'assets/images/time_icon.png';
+  static const String locationIcon = 'assets/images/location_icon.png';
+
+}
